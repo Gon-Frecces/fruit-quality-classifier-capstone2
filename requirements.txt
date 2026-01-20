@@ -1,0 +1,13 @@
+# Core
+flask==2.3.3
+gunicorn==21.2.0
+
+# Deep Learning (CPU)
+torch==2.0.0+cpu
+torchvision==0.15.1+cpu
+
+# Image processing
+Pillow==10.2.0
+
+# Utilities
+numpy==1.26.4
