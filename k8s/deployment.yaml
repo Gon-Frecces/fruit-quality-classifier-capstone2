@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fruit-quality-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fruit-quality
+  template:
+    metadata:
+      labels:
+        app: fruit-quality
+    spec:
+      containers:
+      - name: fruit-quality
+        image: fruit-quality-app
+        ports:
+        - containerPort: 5000
